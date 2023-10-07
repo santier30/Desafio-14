@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Desafio-14/static/css/main.23388efd.css",
+    "main.js": "/Desafio-14/static/js/main.9ece6626.js",
+    "static/js/787.d3befce1.chunk.js": "/Desafio-14/static/js/787.d3befce1.chunk.js",
+    "index.html": "/Desafio-14/index.html",
+    "main.23388efd.css.map": "/Desafio-14/static/css/main.23388efd.css.map",
+    "main.9ece6626.js.map": "/Desafio-14/static/js/main.9ece6626.js.map",
+    "787.d3befce1.chunk.js.map": "/Desafio-14/static/js/787.d3befce1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23388efd.css",
+    "static/js/main.9ece6626.js"
+  ]
+}
