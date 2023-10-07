@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+
+import './Components/SASS/Syles.scss';
+import AddNote from './Components/addNote/AddNote';
+import Notes from './Components/notes/Notes';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import useGet from './Hooks/use-get';
+import { useEffect } from 'react';
+import Context from './Components/context';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const [get,notes]=useGet();
+  useEffect(()=>get("https://notes-1580e-default-rtdb.firebaseio.com/Notes.json"),[get]);
+  return(
+<Context.Provider value={{notes:notes,get:get}}>
+<AddNote get={get}/>
+<Notes notes={notes}/>
+</Context.Provider>
   );
 }
 

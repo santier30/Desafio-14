@@ -1,0 +1,63 @@
+@import "./config";
+
+header{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form{
+  width: 80%;
+}
+.a{
+  flex: 1;
+  height: fit-content;
+}
+.textWrap{
+  display: flex;
+  flex-direction: column;
+}
+.titleWrap{display: flex;}
+article{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section{
+  width: 90%;
+  margin: 1rem auto;
+}
+.card{height: fit-content !important;
+width: 400px !important;
+max-width: 100% !important;}
+
+.buttonWrap{
+  display: flex;
+  flex-direction: column;
+
+}
+h2{
+  border-bottom: 1px solid black;
+}
+  
+.edit-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.edit-button{
+  float: right !important;
+}
+@include media-min{
+  .textWrap{
+    flex-direction: row;
+  }
+  .buttonWrap{
+    display: block;
+  }
+}
+
